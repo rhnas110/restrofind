@@ -1,50 +1,84 @@
-# React + TypeScript + Vite
+<div align=center>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h1>RestroFind</h1>
 
-Currently, two official plugins are available:
+**RestroFind** is a web application that helps users discover restaurants and share reviews for the ultimate dining adventure.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![RestroFind Preview](/src/assets/preview.png)
 
-## Expanding the ESLint configuration
+</div>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Table of Contents
 
-- Configure the top-level `parserOptions` property like this:
+- [Introduction](#introduction)
+- [Demo](#demo)
+- [Tech Stack](#tech-stack)
+- [Features](#features)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Introduction
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+**RestroFind** is an application designed to make finding the best restaurants effortless and exciting.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Demo
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- **[Demo]**
+
+## Tech Stack
+
+![React](https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=white)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=FFD62E)
+![TypeScript](https://img.shields.io/badge/TypeScript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+
+- React: v18.3.1
+- Tested and deployed on:
+  - Node.js v18.20.6 (npm v10.8.2)
+  - Development tested with Node.js v20.10.0 and v22.11.0
+
+## Features
+
+- Display dynamic restaurant reviews and ratings.
+- Fully responsive design for all devices.
+- Start your dining journey with a clean and intuitive interface.
+
+## Getting Started
+
+Follow these instructions to get **RestroFind** up and running on your local machine.
+
+### Prerequisites
+
+You need a web browser to run this project.
+
+### Installation
+
+1. Clone this repository:
+
+   ```bash
+   git clone https://github.com/rhnas110/restrofind.git
+   ```
+
+   Navigate to the project directory:
+
+   ```bash
+   cd restrofind
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser and go to http://localhost:5173 to view the application.
+
+[comment]: <> (LINK VARIABLE)
+[demo]: https://restrofind.netlify.app/
